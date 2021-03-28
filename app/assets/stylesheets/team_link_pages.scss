@@ -1,0 +1,185 @@
+// Place all the styles related to the TeamLinkPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+section {
+    
+}
+
+//home
+.inner {
+    float: left;
+    width: 50%;
+    padding: 70px 10px 0px 10px;
+}
+
+.catch_copy {
+    text-align: left;
+    letter-spacing: 3px;
+    font-size: 40px;
+    line-heighgt: 1.6;
+}
+
+.button--wrapp {
+    float: left;
+    justify-content: start;
+}
+
+.button-1 {
+    width: 200px;
+    height: 40px;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    list-style: none;
+    color: #ffffff;
+    background: blue;
+    text-align: center;
+}
+
+.explanation {
+    margin: 0 auto;
+    width: 840px;
+}
+
+.solution--item {
+    width: 33%;
+    float: left;
+}
+
+.feature--item-content {
+    width: 800px;
+    height: 100px;
+}
+
+.title-number {
+    width: 80px;
+    height: 80px;
+    float: left;
+    text-align: center;
+    border: solid 3px #000000;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+
+b span {
+    font-size: 30px;
+}
+
+.feature--item-content h2 {
+    float: left;
+}
+
+.feature--item p {
+    text-align: left;
+}
+
+.procedure--item {
+    width: 29%;
+    height: 200px;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.procedure--item-content {
+    width: 600px;
+    height: 100px;
+}
+
+.procedure--item-content h2 {
+    float: left;
+}
+
+.procedure--item p {
+    text-align: left;
+}
+
+
+.target--item {
+    width: 33%;
+    float: left;
+}
+
+.target--name {
+    text-align: center;
+}
+
+.target--item  {
+    width: 29%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.target--content img {
+    float: left;
+}
+
+.target--content p {
+    float: left;
+    width: 67%;
+    height: 120px;
+}
+
+//company
+
+.list-item {
+    list-style: none;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.list-head {
+    width: 35%;
+    margin-right: 68px;
+    text-align: right;
+    color: rgba(0,0,0,0.4);
+    float: left;
+}
+
+.list-data {
+    width: 55%;
+    font-weight: 600px;
+    float: left;
+}
+
+.history ul {
+    padding-left: 0px;
+    float: left;
+}
+
+.history li {
+    list-style: none;
+}
+
+.list-head-history {
+    margin-right: 28px;
+    width: 35%;
+    text-align: right;
+    color: rgba(0,0,0,0.4);
+    float: left;
+}
+
+.business ul {
+    padding-left: 0px;
+    float: left;
+}
+
+.business li {
+    list-style: none;
+}
+
+.list-head-business {
+    margin-right: 28px;
+    width: 35%;
+    text-align: right;
+    color: rgba(0,0,0,0.4);
+    float: left;
+}
+
+.main-content p {
+    text-align: center;
+}
