@@ -51,8 +51,14 @@ section {
 }
 
 .feature--item-content {
-    width: 800px;
+    width: 100%;
     height: 100px;
+}
+
+.inner_text {
+    width: 40%;
+    height: 240px;
+    float: left;
 }
 
 .title-number {
@@ -69,12 +75,46 @@ b span {
     font-size: 30px;
 }
 
+.feature--item {
+    width: 100%;
+    height: 240px;
+}
+
 .feature--item-content h2 {
     float: left;
 }
 
 .feature--item p {
     text-align: left;
+}
+
+.figure-point {
+    width: 57%;
+    height: 200px;
+    float: left;
+    margin-left: 3%;
+}
+
+.free--solution {
+    list-style: none;
+    float: left;
+    margin: 10px;
+}
+
+.president-info h3 {
+    font-size: 16px;
+}
+
+.president img {
+    float: left;
+}
+
+.president-info {
+    float: left;
+}
+
+.president {
+    margin: 0 10px 0 10px;
 }
 
 .procedure--item {
