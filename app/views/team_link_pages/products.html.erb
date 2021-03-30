@@ -1,7 +1,98 @@
 <% provide(:title, "Products") %>
 <h1>プロダクト</h1>
-<p>
-  This is the home page for the
-  <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
-  sample application.
-</p>
+
+<section>
+  <div class = "section--title typesquare_tags">
+    <div class = "title-text">
+      <div class = "title-text-inner">
+        <b>
+          SEARCH
+        </b>
+        <img src = "/assets/search.jpg" width = "30" height = "30">
+      </div>
+    </div>
+    <h2>検索機能</h2>
+  </div>
+  <div class = "search--content">
+    <div class = "search--function">
+      <div class = "search--item">
+        <h3>課題検索機能</h3>
+        <p>経営者が抱えている課題から検索し、その課題の解決に長けたプロの投稿を閲覧することができます。</p>
+        <div class = "button-2"><%= link_to "Team Linkで解決できる課題", '#' %></div>
+      </div>
+      <div class = "search--item">
+        <h3>専門チーム検索機能</h3>
+        <p>特定のプロの専門チームでも検索をすることができます。</p>
+      </div>
+    </div>
+    <img>
+  </div>
+</section>
+
+<section>
+  <div class = "section--title typesquare_tags">
+    <div class = "title-text">
+      <div class = "title-text-inner">
+        <b>
+        　POST
+        </b>
+        <img src = "/assets/post.jpg" width = "30" height = "30">
+      </div>
+    </div>
+    <h2>課題投稿機能</h2>
+  </div>
+  <div class = "search--content">
+    <div class = "search--function">
+      <p>プロの情報から相談の依頼先を決めて、相談内容を投稿することができます。投稿の手順は1clickで簡単に行うことができます。</p>
+      <div class = "button-2"><%= link_to "Team Linkの簡単ステップ", '#' %></div>
+    </div>
+    <img>
+  </div>
+</section>
+
+<section>
+  <div class = "section--title typesquare_tags">
+    <div class = "title-text">
+      <div class = "title-text-inner">
+        <b>
+          RECEPT
+        </b>
+        <img src = "/assets/recept.jpg" width = "30" height = "30">
+      </div>
+    </div>
+    <h2>オファー受信機能</h2>
+  </div>
+  <div class = "search--content">
+    <div class = "search--function">
+      <p>課題の相談に関するメッセージがプロから送られてきます。課題解決に役立てたり、業務提携先としての関係を築くことが出来ます。</p>
+      <div class = "button-2"><%= link_to "Team Linkの簡単ステップ", '#' %></div>
+    </div>
+    <img>
+  </div>
+</section>
+
+<section>
+  <div class = "section--title typesquare_tags">
+    <div class = "title-text">
+      <div class = "title-text-inner">
+        <b>
+          SERVICE
+        </b>
+        <img src = "/assets/service.jpg" width = "30" height = "30">
+      </div>
+    </div>
+    <h2>自社サービス掲載・投稿機能</h2>
+  </div>
+  <div class = "search--content">
+    <div class = "search--function">
+      <p>課題の相談に関するメッセージがプロから送られてきます。課題解決に役立てたり、業務提携先としての関係を築くことが出来ます。</p>
+      <div class = "button--wrapp typesquare_tags">
+        <ul>
+          <li class = "button-3"><%= link_to "アカウント作成", '#' %></li>
+          <li class = "button-3"><%= link_to "料金プラン一覧", '#' %></li>
+        </ul>
+      </div>
+    </div>
+    <img>
+  </div>
+</section>
