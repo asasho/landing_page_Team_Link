@@ -9,8 +9,10 @@ section {
 }
 
 .section--title {
-    padding: 30px 0 30px 0;
+    padding: 30px 0 0 0;
+    margin-top: 120px;
     font-weight: 700;
+    height: 100px;
 }
 
 //home
@@ -44,13 +46,13 @@ section {
     margin: 10px;
     border-radius: 10px;
     list-style: none;
-    color: #ffffff;
+    font-weight: bold;
     background: rgb(0, 149, 246);
     text-align: center;
     box-shadow: 0 10px;
 }
 
-.button-2 {
+.button-1-2 {
     width: 200px;
     height: 40px;
     float: left;
@@ -58,7 +60,23 @@ section {
     margin: 10px;
     border-radius: 10px;
     list-style: none;
-    color: #ffffff;
+    font-weight: bold;
+    background: white;
+    text-align: center;
+    box-shadow: 0 10px;
+    border: solid 3px #0095F6;
+}
+
+
+.button-2 {
+    width: 240px;
+    height: 40px;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    list-style: none;
+    font-weight: bold;
     background: rgb(0, 149, 246);
     text-align: center;
     box-shadow: 0 10px;
@@ -72,7 +90,7 @@ section {
     margin: 10px;
     border-radius: 10px;
     list-style: none;
-    color: #ffffff;
+    font-weight: bold;
     background: rgb(0, 149, 246);
     text-align: center;
     box-shadow: 0 10px;
@@ -117,6 +135,10 @@ section {
     float: left;
 }
 
+.inner_text p {
+    margin-top: 60px;
+}
+
 .title-number {
     width: 100px;
     height: 100px;
@@ -153,6 +175,7 @@ b {
 
 .inner_text p {
     text-align: left;
+    margin-top: 60px;
 }
 
 .figure-point {
@@ -163,12 +186,13 @@ b {
 
 .procedure--item {
     width: 80%;
-    height: 700px;
+    height: 800px;
     margin: 0 auto;
 }
 
 .procedure--content p {
     text-align: left;
+    margin-top: 60px;
 }
 
 .target--item  {
