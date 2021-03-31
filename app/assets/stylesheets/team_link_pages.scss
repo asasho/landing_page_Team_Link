@@ -40,11 +40,12 @@ section {
     float: left;
     padding: 10px;
     margin: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     list-style: none;
     color: #ffffff;
-    background: blue;
+    background: rgb(0, 149, 246);
     text-align: center;
+    box-shadow: 0 10px;
 }
 
 .button-2 {
@@ -52,12 +53,13 @@ section {
     height: 40px;
     float: left;
     padding: 10px;
-    margin: 0 auto;
-    border-radius: 20px;
+    margin: 10px;
+    border-radius: 10px;
     list-style: none;
     color: #ffffff;
-    background: blue;
+    background: rgb(0, 149, 246);
     text-align: center;
+    box-shadow: 0 10px;
 }
 
 .button-3 {
@@ -65,12 +67,13 @@ section {
     height: 40px;
     float: left;
     padding: 10px;
-    margin: 0 auto;
-    border-radius: 20px;
+    margin: 10px;
+    border-radius: 10px;
     list-style: none;
     color: #ffffff;
-    background: blue;
+    background: rgb(0, 149, 246);
     text-align: center;
+    box-shadow: 0 10px;
 }
 
 .explanation {
@@ -86,6 +89,14 @@ section {
 .solution--icon {
     width: 80px;
     height: 80px;
+    float: left;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.solution--name {
+    float: left;
+    margin: 53px 0 53px 0;
 }
 
 .feature--item {
@@ -110,7 +121,7 @@ section {
     float: left;
     text-align: center;
     border: solid 3px #000000;
-    border-radius: 100%;
+    border-radius: 25%;
 }
 
 .title-number-inner {
@@ -122,6 +133,8 @@ b span {
 }
 
 b {
+    text-align: center;
+    margin: 0 auto;
 }
 
 .feature--item {
@@ -140,27 +153,9 @@ b {
 }
 
 .figure-point {
-    width: 57%;
-    height: 200px;
     float: left;
     margin-left: 3%;
     border-radius: 20px;
-}
-
-.president-info h3 {
-    font-size: 16px;
-}
-
-.president img {
-    float: left;
-}
-
-.president-info {
-    float: left;
-}
-
-.president {
-    margin: 0 10px 0 10px;
 }
 
 .procedure--item {
@@ -269,15 +264,21 @@ b {
 .title-text {
     width: 100px;
     height: 100px;
-    text-align: center;
     border: solid 3px #000000;
-    border-radius: 100%;
+    border-radius: 25%;
     vertical-align: middle;
     margin: 0 auto;
 }
 
 .title-text-inner {
-    margin: 25px;
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    text-align: center;
+}
+
+.search--content {
+    margin: 20px;
 }
 
 .search--function {
@@ -294,4 +295,8 @@ b {
 
 .search--item h3 {
     text-align: left;
+}
+
+.products--content {
+    margin-top: 60px;
 }
