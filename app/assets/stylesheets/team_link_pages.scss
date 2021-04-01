@@ -4,6 +4,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+h1 {
+    font-weight: 700;
+}
+
 section {
     margin: 60px 0 60px 0;
 }
@@ -49,7 +53,6 @@ section {
     font-weight: bold;
     background: rgb(0, 149, 246);
     text-align: center;
-    box-shadow: 0 10px;
 }
 
 .button-1-2 {
@@ -63,7 +66,6 @@ section {
     font-weight: bold;
     background: white;
     text-align: center;
-    box-shadow: 0 10px;
     border: solid 3px #0095F6;
 }
 
@@ -79,7 +81,6 @@ section {
     font-weight: bold;
     background: rgb(0, 149, 246);
     text-align: center;
-    box-shadow: 0 10px;
 }
 
 .button-3 {
@@ -93,7 +94,6 @@ section {
     font-weight: bold;
     background: rgb(0, 149, 246);
     text-align: center;
-    box-shadow: 0 10px;
 }
 
 .explanation {
@@ -129,8 +129,14 @@ section {
     margin: 0 auto;
 }
 
+.item-content-step1 {
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+}
+
 .inner_text {
-    width: 40%;
+    width: 45%;
     height: 240px;
     float: left;
 }
@@ -161,6 +167,7 @@ b {
     margin: 0 auto;
 }
 
+
 .feature--item {
     width: 100%;
     height: 300px;
@@ -169,30 +176,51 @@ b {
 
 .item-content h2 {
     float: left;
-    margin: 33.6px 10px 33.6px 10px;
+    margin: 33.6px 30px 33.6px 30px;
+    font-weight: 700;
+}
+
+.item-content-step1 h2 {
+    float: left;
+    margin: 33.6px 30px 33.6px 30px;
+    font-weight: 700;
+}
+
+
+.procedure--item-content h2 {
+    margin: 17.2px 30px 17.2px 30px;
     font-weight: 700;
 }
 
 .inner_text p {
     text-align: left;
     margin-top: 60px;
+    width: 70%;
 }
 
 .figure-point {
     float: left;
     margin-left: 3%;
     border-radius: 20px;
-}
-
-.procedure--item {
-    width: 80%;
-    height: 800px;
+    width: 40%;
     margin: 0 auto;
 }
 
+.procedure--item {
+    width: 32%;
+    height: 800px;
+    margin: 0 auto;
+    float: left;
+}
+
 .procedure--content p {
-    text-align: left;
-    margin-top: 60px;
+    margin: 30px 15% 30px 15%;
+    height: 100px;
+}
+
+.procedure--content img {
+    width: 70%;
+    margin: 0 15% 0 15%;
 }
 
 .target--item  {
@@ -289,6 +317,11 @@ b {
     margin: 0 auto;
     width: 45%;
     height: 180px;
+    font-weight: 700;
+}
+
+.section--title h2 {
+    font-weight: 700;
 }
 
 .title-text {
@@ -318,9 +351,17 @@ b {
     padding-left: 5%;
 }
 
+.search--content img{
+    width: 45%;
+}
+
 .search--item {
     width: 100%;
     height: 150px;
+}
+
+.search--item h3 {
+    font-weight: 700;
 }
 
 .search--item h3 {
@@ -329,4 +370,10 @@ b {
 
 .products--content {
     margin-top: 60px;
+}
+
+.product-figure {
+    width: 45%;
+    height: 300px;
+    border-radius: 20px;
 }
