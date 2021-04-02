@@ -16,12 +16,6 @@ section {
     margin-bottom: 60px;
 }
 
-.section--title {
-    padding: 30px 0 0 0;
-    margin-top: 120px;
-    font-weight: 700;
-    height: 100px;
-}
 
 //home
 .inner {
@@ -98,6 +92,18 @@ section {
     font-weight: bold;
     background: rgb(0, 149, 246);
     text-align: center;
+}
+
+.button-cta {
+    width: 320px;
+    height: 90px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    background-color: #0095F6;
+    border-radius: 22px;
+    text-decoration: none;
+    padding: 25px 55px 25px 55px;
 }
 
 .explanation {
@@ -359,9 +365,9 @@ b {
 }
 
 .title-text-inner {
-    width: 60px;
+    width: 80px;
     height: 60px;
-    margin: 20px;
+    margin: 17px 7px 17px 7px;
     text-align: center;
 }
 
@@ -387,9 +393,6 @@ b {
 
 .search--item h3 {
     font-weight: 700;
-}
-
-.search--item h3 {
     text-align: left;
 }
 
@@ -399,6 +402,19 @@ b {
 
 .product-figure {
     width: 45%;
-    height: 300px;
     border-radius: 20px;
+}
+
+.product-figure-solution {
+    width: 45%;
+    border-radius: 20px;
+}
+
+
+.cta {
+    width: 100%;
+}
+
+.cta-area {
+    margin: 0 auto;
 }
