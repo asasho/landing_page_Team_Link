@@ -13,14 +13,17 @@
       <br>
       プロの検索
     </p>
-    <div class = "button--wrapp typesquare_tags">
-      <ul>
-        <li class = "button-1"><%= link_to "新規無料登録", '#', :style => "color:white;" %></li>
-        <li class = "button-1-2"><%= link_to "資料説明はこちらから", '#', :style => "color:#0095F6;" %></li>
-      </ul>
-    </div>
   </div>
-  <img src = "/assets/display_PC.jpg" width = "500" height = "300" alt = "PC">
+  <img class = "PC" src = "/assets/display_PC.jpg" alt = "PC">
+  <img class = "SP" src = "/assets/display_SP.jpg" alt = "SP">
+  <div class = "button--wrapp typesquare_tags">
+    <ul>
+      <li class = "button-1"><%= link_to "新規無料登録", '#', :style => "color:white;" %></li>
+      <li class = "button-1-2"><%= link_to "資料説明はこちらから", '#', :style => "color:#0095F6;" %></li>
+    </ul>
+  </div>
+  
+  
 </section>
 <section>
   <h1 class = "section--title link_move" id = "solutions">Team Linkで解決できる課題</h1>
@@ -31,7 +34,7 @@
   </p>
   <div class = "solution--wrapp">
     <div class = "solution--item">
-      <img class = solution--icon src = "/assets/hiring_new_graduates.jpg" width = "80px" height = "80px">
+      <img class = "solution--icon" src = "/assets/hiring_new_graduates.jpg" width = "80px" height = "80px">
       <div class = "solution--name">
         <span>
           <b>新卒の採用</b>
@@ -39,7 +42,7 @@
       </div>
     </div>
     <div class = "solution--item">
-      <img class = solution--icon src = "/assets/Mid_career" width = "80px" height = "80px">
+      <img class = "solution--icon" src = "/assets/Mid_career" width = "80px" height = "80px">
       <div class = "solution--name">
         <span>
           <b>中途の採用</b>
@@ -47,7 +50,7 @@
       </div>
     </div>
     <div class = "solution--item">
-      <img class = solution--icon src = "/assets/improve_retire.jpg" width = "80px" height = "80px">
+      <img class = "solution--icon" src = "/assets/improve_retire.jpg" width = "80px" height = "80px">
       <div class = "solution--name">
         <span>
           <b>離職率の低下</b>
@@ -55,7 +58,7 @@
       </div>
     </div>
     <div class = "solution--item">
-      <img class = solution--icon src = "/assets/task_management.jpg" width = "80px" height = "80px">
+      <img class = "solution--icon" src = "/assets/task_management.jpg" width = "80px" height = "80px">
       <div class = "solution--name">
         <span>
           <b>タスクの効率化</b>
@@ -63,7 +66,7 @@
       </div>
     </div>
     <div class = "solution--item">
-      <img class = solution--icon src = "/assets/sikintyoutatu.jpg" width = "80px" height = "80px">
+      <img class = "solution--icon" src = "/assets/sikintyoutatu.jpg" width = "80px" height = "80px">
       <div class = "solution--name">
         <span>
           <b>資金調達</b>
@@ -71,7 +74,7 @@
       </div>
     </div>
     <div class = "solution--item">
-      <img class = solution--icon src = "/assets/money.jpg" width = "80px" height = "80px">
+      <img class = "solution--icon" src = "/assets/money.jpg" width = "80px" height = "80px">
       <div class = "solution--name">
         <span>
           <b>資金繰りの改善</b>
@@ -79,7 +82,7 @@
       </div>
     </div>
     <div class = "solution--item">
-      <img class = solution--icon src = "/assets/HP.jpg" width = "80px" height = "80px">
+      <img class = "solution--icon" src = "/assets/HP.jpg" width = "80px" height = "80px">
       <div class = "solution--name">
         <span>
           <b>HP作成</b>
@@ -87,7 +90,7 @@
       </div>
     </div>
     <div class = "solution--item">
-      <img class = solution--icon src = "/assets/website.jpg" width = "80px" height = "80px">
+      <img class = "solution--icon" src = "/assets/website.jpg" width = "80px" height = "80px">
       <div class = "solution--name">
         <span>
           <b>web集客</b>
@@ -95,7 +98,7 @@
       </div>
     </div>
     <div class = "solution--item">
-      <img class = solution--icon src = "/assets/gathering.jpg" width = "80px" height = "80px">
+      <img class = "solution--icon" src = "/assets/gathering.jpg" width = "80px" height = "80px">
       <div class = "solution--name">
         <span>
           <b>自社商品の集客の強化</b>
@@ -103,7 +106,7 @@
       </div>
     </div>
     <div class = "solution--item">
-      <img class = solution--icon src = "/assets/new_business.jpg" width = "80px" height = "80px">
+      <img class = "solution--icon" src = "/assets/new_business.jpg" width = "80px" height = "80px">
       <div class = "solution--name">
         <span>
           <b>新規事業創出</b>
@@ -111,12 +114,20 @@
       </div>
     </div>
     <div class = "solution--item">
-      <img class = solution--icon src = "/assets/installation_tools" width = "80px" height = "80px"> 
+      <img class = "solution--icon" src = "/assets/installation_tools" width = "80px" height = "80px"> 
       <div class = "solution--name">
         <span>
           <b>ITシステムの構築</b>
         </span>
       </div> 
+    </div>
+    <div class = "solution--item solution--none">
+      <img class = "solution--icon" src = "/assets/hiring_new_graduates.jpg" width = "80px" height = "80px">
+      <div class = "solution--name">
+        <span>
+          <b>新卒の採用</b>
+        </span>
+      </div>
     </div>
   </div>
 </section>
@@ -201,74 +212,76 @@
 
 <section>
   <h1 class = "section--title">Team Linkの簡単3ステップ</h1>
-  <div class = "procedure--item typesquare_tags" id = "step1">
-    <div class = "item-content-step1 typesquare_tags">
-      <div class = "title-number">
-        <div class = "title-number-inner">
-          <b>
-            STEP
-            <br>
-            <span>
-              1
-            </span>
-          </b>
+  <div class = "procedure">
+    <div class = "procedure--item typesquare_tags" id = "step1">
+      <div class = "item-content-step1 typesquare_tags">
+        <div class = "title-number">
+          <div class = "title-number-inner">
+            <b>
+              STEP
+              <br>
+              <span>
+                1
+              </span>
+            </b>
+          </div>
         </div>
+        <h2>1clickで課題<br>を作成</h2>
       </div>
-      <h2>1clickで課題<br>を作成</h2>
+      <div class = "procedure--content">
+        <p>
+          様々な経営におけるシチュエーションで、いつでもどこでも
+          1 clickで気軽に経営層の課題を投稿することができます。
+        </p>
+        <img src = "/assets/step1.jpg">
+      </div>
     </div>
-    <div class = "procedure--content">
-      <p>
-        様々な経営におけるシチュエーションで、いつでもどこでも
-        1 clickで気軽に経営層の課題を投稿することができます。
-      </p>
-      <img src = "/assets/step1.jpg">
+    <div class = "procedure--item typesquare_tags" id = "step2">
+      <div class = "item-content typesquare_tags">
+        <div class = "title-number">
+          <div class = "title-number-inner">
+            <b>
+              STEP
+              <br>
+              <span>
+                2
+              </span>
+            </b>
+          </div>
+        </div>
+        <h2>業界のプロから<br>返信が届く</h2>
+      </div>
+      <div class = "procedure--content">
+        <p>
+          各業界のプロからメッセージが送られてくるので、経営課題の
+          解決に役立てることが出来ます。
+        </p>
+        <img src = "/assets/step2.jpg">
+      </div>
     </div>
+    <div class = "procedure--item typesquare_tags">
+      <div class = "item-content typesquare_tags">
+        <div class = "title-number">
+          <div class = "title-number-inner">
+            <b>
+              STEP
+              <br>
+              <span>
+                3
+              </span>
+            </b>
+          </div>
+        </div>
+        <h2>プロのサービス<br>を確認</h2>
+      </div>
+      <div class = "procedure--content">
+        <p>
+          業界のプロ集団が担当するサービスを確認することができます。
+        </p>
+        <img src = "/assets/step3.jpg">
+      </div>
+    </div>  
   </div>
-  <div class = "procedure--item typesquare_tags" id = "step2">
-    <div class = "item-content typesquare_tags">
-      <div class = "title-number">
-        <div class = "title-number-inner">
-          <b>
-            STEP
-            <br>
-            <span>
-              2
-            </span>
-          </b>
-        </div>
-      </div>
-      <h2>業界のプロから<br>返信が届く</h2>
-    </div>
-    <div class = "procedure--content">
-      <p>
-        各業界のプロからメッセージが送られてくるので、経営課題の
-        解決に役立てることが出来ます。
-      </p>
-      <img src = "/assets/step2.jpg">
-    </div>
-  </div>
-  <div class = "procedure--item typesquare_tags">
-    <div class = "item-content typesquare_tags">
-      <div class = "title-number">
-        <div class = "title-number-inner">
-          <b>
-            STEP
-            <br>
-            <span>
-              3
-            </span>
-          </b>
-        </div>
-      </div>
-      <h2>プロのサービス<br>を確認</h2>
-    </div>
-    <div class = "procedure--content">
-      <p>
-        業界のプロ集団が担当するサービスを確認することができます。
-      </p>
-      <img src = "/assets/step3.jpg">
-    </div>
-  </div>  
 </section>
 
 <section>
