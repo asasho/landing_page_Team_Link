@@ -98,6 +98,7 @@ header {
 
 footer {
   margin-top: 45px;
+  margin-bottom: 80px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #777;
@@ -106,7 +107,7 @@ footer {
 .footer-list {
   float: left;
   list-style: none;
-  width: 550px;
+  width: 50%;
 }
 
 .footer-list-title {
@@ -130,11 +131,19 @@ footer {
 }
 
 
-@media(max-width: 670px) {
+@media(max-width: 1000px) {
+  .header-tag {
+    display: none;
+  }
+}
+
+@media(max-width: 700px) {
   //header
   .header-tag {
     display: none;
   }
+  
+  //footer
   
   
 }

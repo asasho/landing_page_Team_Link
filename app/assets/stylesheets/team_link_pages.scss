@@ -38,7 +38,7 @@ section {
     height: 300px;
 }
     
-.TT {
+.iPad {
     display: none;
 }
     
@@ -87,7 +87,6 @@ section {
 .button-2 {
     width: 240px;
     height: 40px;
-    float: left;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
@@ -98,9 +97,8 @@ section {
 }
 
 .button-3 {
-    width: 150px;
     height: 40px;
-    float: left;
+    flex: auto;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
@@ -244,12 +242,12 @@ b {
 
 .procedure {
     display: flex;
+    margin-bottom: 120px;
 }
 
 .procedure--item {
     flex: auto;
     width: 32%;
-    height: 600px;
     margin: 0 auto;
 }
 
@@ -335,11 +333,6 @@ b {
     float: left;
 }
 
-.history ul {
-    padding-left: 0px;
-    float: left;
-}
-
 .history li {
     list-style: none;
 }
@@ -349,11 +342,6 @@ b {
     width: 35%;
     text-align: right;
     color: rgba(0,0,0,0.4);
-    float: left;
-}
-
-.business ul {
-    padding-left: 0px;
     float: left;
 }
 
@@ -377,7 +365,7 @@ b {
 
 .section--title {
     margin: 0 auto;
-    width: 45%;
+    width: 70%;
     height: 180px;
     font-weight: 700;
 }
@@ -404,10 +392,16 @@ b {
 
 .search--content {
     margin: 20px;
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+.search--content img {
+    margin: auto;
 }
 
 .search--function {
-    float: left;
+    flex: auto;
     width: 40%;
     margin: 0 5% 0 5%;
     padding-left: 5%;
@@ -415,6 +409,7 @@ b {
 
 .search--content img{
     width: 30%;
+    flex: auto;
 }
 
 .search--item {
@@ -450,7 +445,7 @@ b {
     margin: 0 auto;
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 1000px) {
     .inner {
         width: 100%;
     }
@@ -459,7 +454,117 @@ b {
         display: none;
     }
     
-    .TT {
+    .iPad {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .SP {
+        display: none;
+    }
+    
+    .button--wrapp {
+        margin-left: -31px;
+        padding: 30px 0px 30px 0px;
+        display: flex;
+    }
+    
+    .button-1 {
+        flex: auto;
+    }
+    
+    .button-1-2 {
+        flex: auto;
+    }
+    
+    .button-2 {
+        margin: 0 auto;
+    }
+    
+    
+    .solution--wrapp {
+        flex-wrap: wrap;
+    }
+    
+    .solution--item {
+        width: 25%;
+        display: block;
+    }
+
+    .solution--icon {
+        margin: 0 auto;
+    }
+
+    .solution--name {
+        margin: 0 auto;
+    }
+    
+    .feature--item {
+        width: 90%;
+        flex-direction: column;
+    }
+    
+    .inner_text {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .inner_text p {
+        margin: 0 auto;
+    }
+    
+    .figure-point{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .figure-point-moc {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .procedure {
+        flex-direction: column;
+    }
+    
+    .procedure--item {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .procedure--item div {
+        margin: 0 auto;
+    }
+    
+    .procedure--content p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .target--item {
+        width: 100%;
+        float: none;
+        margin-bottom: 120px;
+    }
+    
+    //company
+    
+    
+    //products
+    
+}
+
+@media screen and (max-width: 700px) {
+    .inner {
+        width: 100%;
+    }
+    
+    .PC {
+        display: none;
+    }
+    
+    .iPad {
         display: none;
     }
     
@@ -481,6 +586,14 @@ b {
         flex: auto;
     }
     
+    .button-2 {
+        margin: 0 auto;
+    }
+    
+    .button-3 {
+        flex: auto;
+    }
+    
     .solution--wrapp {
         flex-wrap: wrap;
     }
@@ -498,31 +611,99 @@ b {
         margin: 0 auto;
     }
     
+    .feature--item {
+        width: 100%;
+        flex-direction: column;
+    }
+    
     .inner_text {
         width: 100%;
-        float: none;
         margin: 0 auto;
     }
     
     .inner_text p {
-        margin-top: 0px;
-        float: none;
         margin: 0 auto;
     }
     
-    .feature--item {
+    .figure-point{
         width: 100%;
+        margin: 0 auto;
     }
     
-    .feature-point{
+    .figure-point-moc {
         width: 100%;
-        float: none;
         margin: 0 auto;
+    }
+    
+    .procedure {
+        flex-direction: column;
+    }
+    
+    .procedure--item {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    
+    .procedure--item div {
+        margin: 0 auto;
+    }
+    
+    .procedure--content p {
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     
     .target--item {
         width: 100%;
         float: none;
         margin-bottom: 120px;
+    }
+    
+    //company
+    .list-head {
+        width: 25%;
+        margin-right: 68px;
+        text-align: right;
+        color: rgba(0,0,0,0.4);
+        float: left;
+    }
+
+    .list-data {
+        width: 65%;
+        font-weight: 600px;
+        float: left;
+    }
+    
+    .list-head-history {
+        margin-right: 28px;
+        width: 25%;
+        text-align: right;
+        color: rgba(0,0,0,0.4);
+        float: left;
+    }
+    
+    .list-head-business {
+        margin-right: 28px;
+        width: 25%;
+        text-align: right;
+        color: rgba(0,0,0,0.4);
+        float: left;
+    }
+
+
+    
+    //product
+    .search--content {
+        flex-direction: column;
+    }
+    
+    .search--function {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .search--content  img {
+        width: 80%;
+        margin: 0 auto;
     }
 }
