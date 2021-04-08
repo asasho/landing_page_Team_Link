@@ -1,14 +1,21 @@
+<%= javascript_pack_tag 'application/hamburger' %>
+
 <header class="navbar navbar-fixed-top">
   <div class="container">
     <div class = "logo">
-      <%= link_to image_tag("TeamLink_logo.jpg", class: "logo"), root_path, :style => "color:inherit;"  %>
-    </div>
+      <%= link_to image_tag("TeamLink_logo.jpg", class:"logo"), root_path, :style => "color:inherit;" %>
+  　</div>
     <nav>
-      <ul class="header-tag">
+      <ul>
         <li><%= link_to "企業情報",   company_path, :style => "color:white;" %></li>
         <li><%= link_to "プロダクト",   products_path, :style => "color:white;" %></li>
         <li><%= link_to "ニュース", news_path, :style => "color:white;" %></li>
       </ul>
     </nav>
+    <div id="btn" class="btn-trigger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
 </header>
