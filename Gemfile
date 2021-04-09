@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'rails',      '6.0.3'
-gem 'bcrypt',         '3.1.13'
+gem 'bcrypt',         '3.1.16'
 gem 'bootstrap-sass', '3.4.1'
 gem 'jquery-rails'
 gem 'puma',       '4.3.6'

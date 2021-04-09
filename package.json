@@ -6,8 +6,9 @@
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.3.0",
+    "bootstrap": "3.4.1",
     "iscroll": "^5.2.0",
-    "jquery": "^3.6.0",
+    "jquery": "3.4.1",
     "jquery-drawer": "^3.2.2",
     "slick-carousel": "^1.8.1",
     "turbolinks": "^5.2.0"
