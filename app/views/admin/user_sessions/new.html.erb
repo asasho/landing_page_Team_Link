@@ -1,0 +1,18 @@
+<% provide(:title, "Log in") %>
+<h1>管理者用ログイン画面</h1>
+
+<div class = "row">
+    <div class = "col-md-6 col-md-offset-3">
+        <%= form_with(url: admin_login_path, scope: :session, local: true) do |f| %>
+        
+          <%= f.label :email, "メールアドレス" %>
+          <%= f.email_field :email, class: 'form-control' %>
+          
+          <%= f.label :password, "パスワード" %>
+          <%= link_to "(パスワードを忘れた方はこちら)", new_password_reset_path %>
+          <%= f.password_field :password, class: 'form-control' %>
+          
+          <%= f.submit "ログイン", class: "btn btn-primary" %>
+        <% end %>
+    </div>
+</div>
