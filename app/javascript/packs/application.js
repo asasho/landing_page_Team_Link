@@ -8,7 +8,6 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 require('jquery')
-require('slick')
 import "bootstrap"
 
 
@@ -23,6 +22,5 @@ import "bootstrap"
 
 //= require jquery
 //= require jquery_ujs
-//= require slick
 //= require turbolinks
 //= require_tree
