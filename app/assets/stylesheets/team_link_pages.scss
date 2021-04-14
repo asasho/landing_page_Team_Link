@@ -6,6 +6,7 @@
 
 h1,h2 {
     font-weight: 700;
+    padding: 50px;
 }
 
 section {
@@ -22,67 +23,49 @@ section {
     float: left;
     width: 50%;
     padding: 0px 30px 0px 30px;
+    .catch_copy {
+        text-align: left;
+        letter-spacing: 3px;
+        font-size: 40px;
+        line-heighgt: 1.6;
+        padding-bottom: 30px;
+        font-weight: bold;
+    }
 }
 
-.catch_copy {
-    text-align: left;
-    letter-spacing: 3px;
-    font-size: 40px;
-    line-heighgt: 1.6;
-    padding: 0px 0px 30px 0px;
-    font-weight: bold;
-}
-
-.PC {
+.display img {
     width: 40%;
     margin: 0 auto;
 }
-    
-.iPad {
-    display: none;
-}
-    
-.SP {
-    display: none;
-}
-
 
 .button--wrapp {
     margin-left: -31px;
-    padding: 30px 0px 30px 0px
+    padding: 30px 0px 30px 0px;
+    ul {
+        display: flex;   
+        .button-1 {
+            list-style: none;
+            font-weight: bold;
+            background: rgb(0, 149, 246);
+            text-align: center;
+        }
+        .button-1-2 {
+            float: left;
+            background: white;
+            border: solid 3px #0095F6;
+        }
+        .button-1, .button-1-2 {
+            width: 200px;
+            height: 40px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            list-style: none;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
 }
-
-.button--wrapp ul {
-    display: flex;
-}
-
-
-.button-1 {
-    width: 200px;
-    height: 40px;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    list-style: none;
-    font-weight: bold;
-    background: rgb(0, 149, 246);
-    text-align: center;
-}
-
-.button-1-2 {
-    width: 200px;
-    height: 40px;
-    float: left;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    list-style: none;
-    font-weight: bold;
-    background: white;
-    text-align: center;
-    border: solid 3px #0095F6;
-}
-
 
 .button-2 {
     width: 240px;
@@ -128,44 +111,45 @@ section {
 .solution--wrapp {
     display: flex;
     flex-wrap: wrap;
-}
-
-.solution--item {
-    flex: auto;
-    width: 25%;
-    display: flex;
-}
-
-
-.solution--icon {
-    width: 80px;
-    height: 80px;
-    border-radius: 10px;
-    margin: 20px;
-}
-
-.solution--name {
-    margin: 53px 0 53px 0;
+    .solution--item {
+        flex: auto;
+        width: 25%;
+        display: flex;
+        .solution--icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .solution--name {
+            margin: 53px 0 53px 0;
+        }
+    }
 }
 
 .feature--item {
     width: 90%;
     display: flex;
     margin: 60px 5% 60px 5%;
+    .inner_text {
+        flex: auto;
+        width: 48%;
+        height: 300px;
+    }
 }
 
-.item-content {
+.item-content-step1, .item-content {
     display: flex;
-    width: 100%;
     height: 100px;
     margin: 0 auto;
 }
 
 .item-content-step1 {
-    display: flex;
     width: 90%;
-    height: 100px;
-    margin: 0 auto;
+}
+
+.item-content {
+    width: 100%;
 }
 
 .inner_text {
@@ -175,7 +159,8 @@ section {
 }
 
 .inner_text p {
-    margin-top: 30px;
+    margin: 30px 10% 0 10%;
+    width: 70%;
 }
 
 .title-number {
@@ -184,22 +169,24 @@ section {
     text-align: center;
     border: solid 3px #000000;
     border-radius: 25%;
+    .title-number-inner {
+        margin: 8.8px;
+        b {
+            text-align: center;
+            margin: 0 auto;
+            span {
+                font-size: 30px;
+            }
+        }
+    }
 }
-
-.title-number-inner {
-    margin: 8.8px;
+.item-content h2, .item-content-step1 h2 {
+    flex: auto;
+    font-weight: 700;
+    text-align: left;
+    margin: 17.2px 30px 17.2px 30px;
 }
-
-b span {
-    font-size: 30px;
-}
-
-b {
-    text-align: center;
-    margin: 0 auto;
-}
-
-.feature--item img {
+.feature--item img, .figure-point-moc {
     flex: auto;
     margin-left: 3%;
     border-radius: 20px;
@@ -207,94 +194,39 @@ b {
     margin: 0 auto;
 }
 
-.item-content h2 {
-    flex: auto;
-    font-weight: 700;
-    text-align: left;
-    margin-left: 30px;
-}
-
-.item-content-step1 h2 {
-    flex: auto;
-    font-weight: 700;
-    text-align: left;
-    margin-left: 30px;
-}
-
-
-.procedure--item-content h2 {
-    margin: 17.2px 30px 17.2px 30px;
-    font-weight: 700;
-}
-
-.inner_text p {
-    margin: 60px 10% 0 10%;
-    width: 70%;
-}
-
 .figure-point-moc {
-    flex: auto;
-    margin-left: 3%;
-    border-radius: 20px;
     width: 30%;
-    margin: 0 auto;
-}
-
-.procedure {
-    display: flex;
-    margin-bottom: 120px;
-}
-
-.procedure--item {
-    flex: auto;
-    width: 32%;
-    margin: 0 auto;
-}
-
-.procedure--content p {
-    margin: 30px 15% 30px 15%;
-    height: 100px;
-}
-
-.procedure--content img {
-    width: 70%;
-    margin: 0 15% 0 15%;
 }
 
 .target--wrapp {
     display: flex;
     flex-wrap: wrap;
-}
-
-.target--item  {
-    flex: auto;
-    width: 29%;
-    margin: 30px 2% 30px 2%;
-    margin-left: 2%;
-    margin-right: 2%;
-}
-
-.target--item h2 {
-    font-weight: 700;
-    padding-bottom: 30px;
-}
-
-.target--content {
-    display: flex;
-}
-
-.target--content img {
-    flex: auto;
-    width: 48%;
-    margin-right: 2%;
-    border-radius: 20px;
-}
-
-.target--content p {
-    flex: auto;
-    width: 48%;
-    height: 120px;
-    padding-left: 10px;
+    .target--item  {
+        flex: auto;
+        width: 29%;
+        margin: 30px 2% 30px 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+        h2 {
+            font-weight: 700;
+            padding-bottom: 30px;
+        }
+        .target--content {
+            display: flex;
+            .target--content p {
+                flex: auto;
+                width: 48%;
+                height: 120px;
+                padding-left: 10px;
+            }
+            img {
+                flex: auto;
+                width: 48%;
+                margin-right: 2%;
+                border-radius: 20px;
+            }
+        }
+    }
 }
 
 .link_move {
@@ -302,59 +234,48 @@ b {
 }
 
 //company
-
 .company--title {
     margin-top: 100px;
     margin-bottom: 100px;
-}
-
-.company--title h2 {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    h2 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 }
 
 .list-item {
     list-style: none;
     display: flex;
     margin-bottom: 20px;
-}
-
-.list-head {
-    width: 35%;
-    margin-right: 68px;
-    text-align: right;
-    color: rgba(0,0,0,0.4);
-    float: left;
-}
-
-.list-data {
-    width: 55%;
-    font-weight: 600px;
-    float: left;
-}
-
-.history li {
-    list-style: none;
-}
-
-.list-head-history {
-    margin-right: 28px;
-    width: 35%;
-    text-align: right;
-    color: rgba(0,0,0,0.4);
-    float: left;
-}
-
-.business li {
-    list-style: none;
-}
-
-.list-head-business {
-    margin-right: 28px;
-    width: 35%;
-    text-align: right;
-    color: rgba(0,0,0,0.4);
-    float: left;
+    .list-head {
+        width: 35%;
+        margin-right: 68px;
+        text-align: right;
+        color: rgba(0,0,0,0.4);
+        float: left;
+    }
+    .list-head-history {
+        margin-right: 28px;
+        width: 35%;
+        text-align: right;
+        color: rgba(0,0,0,0.4);
+        float: left;
+    }  
+    .list-head-business {
+        margin-right: 28px;
+        width: 35%;
+        text-align: right;
+        color: rgba(0,0,0,0.4);
+        float: left;
+    }
+    .list-data {
+        width: 55%;
+        font-weight: 600px;
+        float: left;
+        .history li, .business li {
+                list-style: none;
+        }
+    }
 }
 
 .main-content p {
@@ -366,8 +287,8 @@ b {
 .section--title {
     margin: 0 auto;
     width: 70%;
-    height: 180px;
     font-weight: 700;
+    padding-bottom: 30px;
 }
 
 .section--title h2 {
@@ -450,35 +371,26 @@ b {
         width: 100%;
     }
     
-    .PC {
-        display: none;
-    }
-    
-    .iPad {
+    .display img {
         display: block;
         width: 70%;
         margin: 0 auto;
     }
-    
-    .SP {
-        display: none;
-    }
-    
+
     .button--wrapp {
         margin-left: -31px;
         padding: 30px 0px 30px 0px;
-    }
-    
-    .button--wrapp ul {
-        display: flex;
-    }
-    
-    .button-1 {
-        flex: auto;
-    }
-    
-    .button-1-2 {
-        flex: auto;
+        ul {
+            display: flex;
+            .button-1 {
+                flex: auto;
+                
+            }
+            .button-1-2 {
+                flex: auto;
+                
+            }
+        }
     }
     
     .button-2 {
@@ -488,105 +400,111 @@ b {
     
     .solution--wrapp {
         flex-wrap: wrap;
-    }
-    
-    .solution--item {
-        width: 25%;
-        display: block;
-    }
-
-    .solution--icon {
-        margin: 0 auto;
-    }
-
-    .solution--name {
-        margin: 0 auto;
+        .solution--item {
+            width: 25%;
+            display: block;
+            img{
+                margin: 0 auto;
+            }
+            .solution--name {
+                margin: 0 auto;
+            }
+        }
     }
     
     .feature--item {
         width: 90%;
         flex-direction: column;
+        .inner_text {
+            width: 100%;
+            margin: 0 auto;
+            p {
+                margin: 0 auto;
+            }
+        }
+        .figure-point, .figure-point-moc {
+            width: 90%;
+            margin: 0 auto;
+        }
     }
     
-    .inner_text {
+    .one-time {
         width: 100%;
-        margin: 0 auto;
-    }
-    
-    .inner_text p {
-        margin: 0 auto;
-    }
-    
-    .figure-point{
-        width: 100%;
-        margin: 0 auto;
-    }
-    
-    .figure-point-moc {
-        width: 100%;
-        margin: 0 auto;
-    }
-    
-    .procedure {
-        flex-direction: column;
-    }
-    
-    .procedure--item {
-        width: 90%;
-        margin: 0 auto;
-    }
-    
-    .procedure--item div {
-        margin: 0 auto;
-    }
-    
-    .procedure--content p {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    
-    .target--item {
-        width: 100%;
-        float: none;
+        display: flex;
+        flex-wrap: wrap;
         margin-bottom: 120px;
+        .slide {
+            flex: auto;
+            width: 33%;
+            margin: 0 auto;
+            .slide-text{
+                p {
+                    margin: 30px 10% 30px 10%;
+                    height: 100px;
+                }
+            }
+            img {
+                width: 70%;
+                margin: 0 15% 0 15%;
+            }
+        }
     }
     
-    //company
+    .slide {
+        display: none;
+    }
     
+    .action {
+        display: block;
+    }
+    
+    
+    .target--wrapp {
+        flex-direction: column;
+        .target--item {
+            width: 100%;
+            margin-bottom: 120px;
+        }
+    }
+    //company
     
     //products
     
 }
 
 @media screen and (max-width: 700px) {
-    .inner {
-        width: 100%;
-    }
     
-    .PC {
-        display: none;
-    }
-    
-    .iPad {
-        display: none;
-    }
-    
-    .SP {
-        display: block;
-        width: 70%;
-        margin: 0 auto;
-    }
-    
-    .button-wrapp ul{
-        display: flex;
-    }
-    
-    .button-1 {
-        flex: auto;
-    }
-    
-    .button-1-2 {
-        flex: auto;
+    section {
+        margin: 15px 0 15px 0;
+        .inner {
+            width: 100%;
+            .catch_copy {
+                font-size: 32px;
+                padding-top: 30px;
+                padding-bottom: 10px;
+            }
+        }
+        .display img {
+            display: block;
+            width: 70%;
+            margin: 0 auto;
+        }
+        
+        .explanation {
+            margin: 40px;
+        }
+        .button-wrapp {
+            padding: 15px 0 15px 0;
+            ul{
+                display: flex;
+                .button-1 {
+                    flex: auto;
+                }
+                .button-1-2 {
+                    flex: auto;
+                }
+            }
+        }
     }
     
     .button-2 {
@@ -599,67 +517,61 @@ b {
     
     .solution--wrapp {
         flex-wrap: wrap;
-    }
-    
-    .solution--item {
-        width: 33%;
-        display: block;
+        width: 80%;
+        margin: 0 auto;
+        .solution--item {
+            width: 33%;
+            display: block;
+            .solution--icon {
+                margin: 0 auto;
+            }
+            .solution--name {
+                margin: 0 auto;
+            }
+        }
     }
 
-    .solution--icon {
-        margin: 0 auto;
+    .item-content h2 {
+        font-size: 24px;
+        margin-right: 30px;
     }
 
-    .solution--name {
-        margin: 0 auto;
+    .item-content-step1 h2 {
+        font-size: 24px;
+    }
+
+    .procedure--item-content h2 {
+        font-size: 24px;
     }
     
-    .feature--item {
-        width: 100%;
-        flex-direction: column;
-    }
-    
-    .inner_text {
-        width: 100%;
-        margin: 0 auto;
-    }
-    
-    .inner_text p {
-        margin: 0 auto;
-    }
-    
-    .figure-point{
-        width: 100%;
-        margin: 0 auto;
-    }
-    
-    .figure-point-moc {
-        width: 100%;
-        margin: 0 auto;
-    }
-    
-    .procedure {
-        flex-direction: column;
-    }
-    
-    .procedure--item {
-        width: 100%;
-        margin-bottom: 60px;
-    }
-    
-    .procedure--item div {
-        margin: 0 auto;
-    }
-    
-    .procedure--content p {
-        margin-top: 10px;
-        margin-bottom: 10px;
+    .section--feature {
+        margin-top: 100px;
+        .feature--item {
+            width: 100%;
+            flex-direction: column;
+            .inner_text {
+                width: 100%;
+                margin: 0 auto;
+                p {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+            }
+            .feature--item img {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
     }
     
     .target--item {
         width: 100%;
         float: none;
-        margin-bottom: 120px;
+        margin-bottom: 30px;
+    }
+    
+    .target--content img {
+        object-fit: cover;
     }
     
     //company
@@ -708,5 +620,32 @@ b {
     .search--content  img {
         width: 80%;
         margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .one-time {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 120px;
+        .slide {
+            flex: auto;
+            width: 32%;
+            margin: 0 auto;
+            .slide-text{
+                p {
+                    margin: 30px 10% 30px 10%;
+                    height: 100px;
+                }
+            }
+            img {
+                width: 70%;
+                margin: 0 15% 0 15%;
+            }
+        }
+    }
+    
+    .prev-btn, .next-btn {
+        display: none;
     }
 }

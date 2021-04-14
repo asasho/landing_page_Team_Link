@@ -1,4 +1,7 @@
 <% provide(:title, "Home") %>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
 <section>
   <div class = "inner typesquare_tags">
     <h1 class = "catch_copy">
@@ -14,18 +17,19 @@
       プロの検索
     </p>
   </div>
-  <img class = "PC" src = "/assets/display_PC.jpg" alt = "PC">
-  <img class = "iPad" src = "/assets/display_iPad.jpg" alt = "iPad">
-  <img class = "SP" src = "/assets/display_SP.jpg" alt = "SP">
+  <picture class = "display">
+    <source srcset="/assets/display_PC.jpg" media="(min-width: 1000px)"/><!-- 幅1000px以上なら表示 -->
+    <source srcset="/assets/display_iPad.jpg" media="(min-width: 700px)"/><!-- 幅700px以上なら表示 -->
+    <img src = "/assets/display_SP.jpg"/><!-- それ以外で表示 -->
+  <picture>
   <div class = "button--wrapp typesquare_tags">
     <ul>
       <li class = "button-1"><%= link_to "新規無料登録", '#', :style => "color:white;" %></li>
       <li class = "button-1-2"><%= link_to "資料説明はこちらから", '#', :style => "color:#0095F6;" %></li>
     </ul>
   </div>
-  
-  
 </section>
+
 <section>
   <h1 class = "section--title link_move" id = "solutions">Team Linkで解決できる課題</h1>
   <p class = "explanation">
@@ -213,77 +217,79 @@
 
 <section>
   <h1 class = "section--title">Team Linkの簡単3ステップ</h1>
-  <div class = "procedure">
-    <div class = "procedure--item typesquare_tags" id = "step1">
-      <div class = "item-content-step1 typesquare_tags">
-        <div class = "title-number">
-          <div class = "title-number-inner">
-            <b>
-              STEP
-              <br>
-              <span>
-                1
-              </span>
-            </b>
+  <div class = "one-time" data-slick='{"dots": true,}'>
+    <div class = "slide action" id = "step1">
+      <div class = "slide-text">
+        <div class = "item-content-step1 typesquare_tags">
+          <div class = "title-number">
+            <div class = "title-number-inner">
+              <b>
+                STEP
+                <br>
+                <span>
+                  1
+                </span>
+              </b>
+            </div>
           </div>
+          <h2>1clickで課題<br>を作成</h2>
         </div>
-        <h2>1clickで課題<br>を作成</h2>
-      </div>
-      <div class = "procedure--content">
         <p>
           様々な経営におけるシチュエーションで、いつでもどこでも
           1 clickで気軽に経営層の課題を投稿することができます。
         </p>
-        <img src = "/assets/step1.jpg">
       </div>
+      <img src = "/assets/step1.jpg">
     </div>
-    <div class = "procedure--item typesquare_tags" id = "step2">
-      <div class = "item-content typesquare_tags">
-        <div class = "title-number">
-          <div class = "title-number-inner">
-            <b>
-              STEP
-              <br>
-              <span>
-                2
-              </span>
-            </b>
+    <div class = "slide" id = "step2">
+      <div class = "slide-text">
+        <div class = "item-content typesquare_tags">
+          <div class = "title-number">
+            <div class = "title-number-inner">
+              <b>
+                STEP
+                <br>
+                <span>
+                  2
+                </span>
+              </b>
+            </div>
           </div>
+          <h2>業界のプロから<br>返信が届く</h2>
         </div>
-        <h2>業界のプロから<br>返信が届く</h2>
-      </div>
-      <div class = "procedure--content">
         <p>
           各業界のプロからメッセージが送られてくるので、経営課題の
           解決に役立てることが出来ます。
         </p>
-        <img src = "/assets/step2.jpg">
       </div>
+      <img src = "/assets/step2.jpg">
     </div>
-    <div class = "procedure--item typesquare_tags">
-      <div class = "item-content typesquare_tags">
-        <div class = "title-number">
-          <div class = "title-number-inner">
-            <b>
-              STEP
-              <br>
-              <span>
-                3
-              </span>
-            </b>
+    <div class = "slide" id = "step3" >
+      <div class = "slide-text">
+        <div class = "item-content typesquare_tags">
+          <div class = "title-number">
+            <div class = "title-number-inner">
+              <b>
+                STEP
+                <br>
+                <span>
+                  3
+                </span>
+              </b>
+            </div>
           </div>
+          <h2>プロのサービス<br>を確認</h2>
         </div>
-        <h2>プロのサービス<br>を確認</h2>
-      </div>
-      <div class = "procedure--content">
         <p>
           業界のプロ集団が担当するサービスを確認することができます。
         </p>
-        <img src = "/assets/step3.jpg">
       </div>
-    </div>  
+      <img src = "/assets/step3.jpg">
+    </div>
   </div>
 </section>
+
+
 
 <section>
   <h1 class = "section--title">Team Linkの対象者</h1>
@@ -407,3 +413,13 @@
     <%= link_to "無料で登録する",  "#" , :style => "color:white;" %>
   </div>
 </div>
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.one-time').slick({
+        console.log('a')
+        dots: true,
+      });
+    });
+</script>
